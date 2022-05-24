@@ -49,6 +49,7 @@ main {
   width: 6.875rem;
   height: 6.875rem;
   border-radius: 50%;
+  image-rendering: -webkit-optimize-contrast; /* https://stackoverflow.com/questions/37906602/blurry-downscaled-images-in-chrome */
 }
 
 .full-name {
