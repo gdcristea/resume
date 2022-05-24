@@ -1,0 +1,456 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+main {
+  background: linear-gradient(
+    180deg,
+    rgba(3, 56, 244, 0.71) 0%,
+    rgba(224, 37, 206, 0.79) 93.75%
+  );
+  background-repeat: no-repeat;
+  padding: 0.625rem 0.875rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  border-radius: 0.625rem;
+}
+/* PERSONAL SECTION */
+
+/* 1. Picture and name */
+.about-me-pers {
+  border-radius: 0.625rem;
+  background-color: rgba(196, 196, 196, 0.3);
+  margin-bottom: 0.9375rem;
+}
+
+.about-me-pers-content {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 31.25rem;
+  padding: 0.9375rem 0 2.875rem;
+}
+
+.picture-and-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5625rem;
+}
+
+.picture-of-myself {
+  max-width: 100%;
+  width: 6.875rem;
+  height: 6.875rem;
+  border-radius: 50%;
+}
+
+.full-name {
+  font-weight: 400;
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
+  margin-bottom: 0.3125rem;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 2.1875rem;
+  line-height: 2.6875rem;
+  color: #ffffff;
+  margin-bottom: 0.3125rem;
+}
+
+.job-title {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+}
+
+.full-name,
+.job-title {
+  color: #cecaca;
+}
+
+/* 2. Contact details */
+.find-me > * {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  word-break: break-all;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  background: rgba(196, 196, 196, 0.35);
+  border-radius: 0.625rem;
+  padding: 0.625rem 0 0.625rem 0.9375rem;
+  margin-bottom: 0.625rem;
+}
+
+.find-me {
+  margin-bottom: 1.875rem;
+}
+
+i {
+  margin-right: 1.875rem;
+}
+
+.e-mail-link,
+.phone-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltiptext {
+  display: none;
+  background-color: #545454;
+  text-align: center;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 40%;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 0.3125rem;
+  border-style: solid;
+  border-color: #545454 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  display: inline-block;
+  opacity: 1;
+}
+
+/* 3. About me + Skills + Social + Hobbies */
+.profile,
+.social,
+.my-skills {
+  padding: 0.375rem 1.3125rem 1.25rem;
+  background: rgba(196, 196, 196, 0.35);
+  border-radius: 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.profile-title,
+.social-title,
+.my-skills-title,
+.hobbies-title,
+.profile-description,
+.my-skills-examples,
+.social-link {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+}
+
+.profile-title,
+.social-title,
+.my-skills-title,
+.hobbies-title,
+.skill,
+.social-link {
+  margin-bottom: 0.3125rem;
+}
+
+.profile-title,
+.social-title,
+.my-skills-title,
+.hobbies-title {
+  font-weight: 700;
+}
+
+.profile-description,
+.my-skills-examples {
+  font-family: "Open Sans", sans-serif;
+}
+
+.my-skills-examples {
+  margin-left: 0.9375rem;
+}
+
+.social-list {
+  list-style-type: none;
+}
+
+.social-link {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+.social-link::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0.1875rem;
+  width: 100%;
+  height: 0.3125rem;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-link:hover::before,
+.social-link:focus::before {
+  bottom: 0;
+  height: 100%;
+}
+
+.hobbies-title {
+  padding: 0.4375rem 0.875rem;
+  background: rgba(196, 196, 196, 0.35);
+  border-radius: 0.625rem;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+}
+
+.hobbies-examples {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e5e5e5;
+  padding: 0 0.875rem;
+}
+
+.hobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobby > i {
+  margin-right: 0;
+}
+
+.hobby-name {
+  font-weight: 700;
+  font-size: 0.6875rem;
+  line-height: 1.125rem;
+}
+
+.fa-book-open {
+  --fa-animation-duration: 3s;
+}
+
+/* PROFESSIONAL SECTION */
+.about-me-prof {
+  border-radius: 0.625rem;
+  background-color: #ffffff;
+}
+
+.about-me-prof-content {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 31.25rem;
+  padding: 1.1875rem 0 1.875rem;
+}
+
+hr {
+  background-color: #545454;
+}
+
+.experience-title,
+.education-title,
+.my-technical-skills-title,
+.my-projects-title {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: #ffffff;
+  padding: 0.1875rem 1.875rem;
+  border-radius: 0.3125rem;
+  background-color: #545454;
+  display: inline-block;
+  position: relative;
+  bottom: 0.8125rem;
+}
+
+.experience-company,
+.education-type {
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.experience-job-title,
+.education-university {
+  font-size: 0.8125rem;
+}
+
+.experience-company,
+.education-type,
+.experience-job-title,
+.education-university {
+  color: #343434;
+  line-height: 1.125rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.experience-duration,
+.education-duration {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.625rem;
+  line-height: 1.125rem;
+  color: #73808d;
+}
+
+.experience-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0.75rem;
+  list-style-type: circle;
+  margin-left: 0.5rem;
+}
+
+.experience > div:last-of-type,
+.education-duration:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.education-duration {
+  margin-bottom: 0.75rem;
+}
+
+.my-technical-skills-title {
+  margin-bottom: 1.125rem;
+}
+
+.my-technical-skills-examples {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.9375rem;
+}
+
+.technical-skill-container {
+  padding: 0.625rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.technical-skill-container:before {
+  content: "";
+  position: absolute;
+  height: calc(100% + 0.625rem);
+  width: calc(100% + 0.625rem);
+  border: 0.5rem dotted orange;
+  top: -0.8125rem;
+  left: -0.8125rem;
+  border-radius: inherit;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.technical-skill {
+  width: 3.5rem;
+}
+
+.my-projects-carousel {
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel-item,
+.carousel-item-hidden {
+  display: none;
+}
+
+.carousel-item-visible {
+  display: block;
+  animation: visibility 0.5s;
+}
+
+@keyframes visibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel-actions {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+#carousel-btn-prev,
+#carousel-btn-next {
+  border-radius: 50%;
+  background-color: #545454;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carousel-btn-prev {
+  margin-left: 0.625rem;
+}
+
+#carousel-btn-next {
+  margin-right: 0.625rem;
+}
+
+@media (min-width: 45rem) {
+  body {
+    background-image: url("assets/cork-board.png");
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .about-me-pers {
+    margin-bottom: 0;
+    width: 47%;
+  }
+
+  .about-me-prof {
+    width: 52%;
+  }
+}
